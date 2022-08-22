@@ -255,6 +255,8 @@ function Header() {
     useEffect(() => {
       fetchImages("shiba").then((urls) => {
         setUrls(urls);
+        console.log("useEffect");
+        console.log(urls);
       });
     }, []);
     function reloadImages(breed) {
